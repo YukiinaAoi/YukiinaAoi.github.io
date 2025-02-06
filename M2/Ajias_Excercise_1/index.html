@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Excercise_1</title>
+    </head>
+    <body>
+        <h1 id="header">Hello, World!</h1>
+        <p id="text">Click to change!</p>
+        <button id="changeTextBtn">Change Text</button>
+        <script>
+            // Select the button, header, and paragraph elements
+            const button = document.getElementById('changeTextBtn');
+            const header = document.getElementById('header');
+            const paragraph = document.getElementById('text');
+        
+            // Add an event listener to the button
+            button.addEventListener('click', function() {
+                header.textContent = 'Text Changed!';
+                paragraph.textContent = 'You clicked the button!';
+            });
+        </script>
+        
+    </body>
+</html>

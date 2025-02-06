@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Excercise_2</title>
+</head>
+<body>
+    <h1>JSON Example</h1>
+    <div id="output"></div>
+
+    <script>
+        // JSON string
+        const jsonString = '{"name": "Jasper B. Ajias", "age": 22, "hobbies": ["programming", "playing piano", "art"]}';
+        
+        // Parse JSON string into a JavaScript object
+        const jsonObject = JSON.parse(jsonString);
+        
+        // Display data in the HTML
+        const outputDiv = document.getElementById('output');
+        outputDiv.innerHTML = `
+            <p>Name: ${jsonObject.name}</p>
+            <p>Age: ${jsonObject.age}</p>
+            <p>Hobbies: ${jsonObject.hobbies.join(", ")}</p>
+        `;
+
+        // Convert JavaScript object back to JSON string
+        const newJsonString = JSON.stringify(jsonObject);
+        console.log(newJsonString); // Output to console
+    </script>
+</body>
+</html>

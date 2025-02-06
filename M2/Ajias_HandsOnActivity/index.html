@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HandsOnActivity</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Pokémon Finder</h1>
+        <input ty   pe="text" id="pokemonInput" placeholder="Enter Pokémon Name or ID">
+        <button onclick="fetchPokemon()">Search</button>
+
+        <div id="pokemon-list-container">
+            <h3>Pokémon List</h3>
+            <ul id="pokemon-list"></ul>
+        </div>
+
+        <div id="pokemon-info"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
